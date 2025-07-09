@@ -1,0 +1,6 @@
+Django
+google-generativeai
+python-decouple
+gunicorn
+psycopg2-binary
+django-cors-headers
