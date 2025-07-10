@@ -19,18 +19,21 @@ logging.basicConfig(
 
 client = genai.Client(api_key=settings.GEMINI_API_KEY)
 
+def get_context():
+    with open(r'resume_website_backend/chat/context.txt', 'r', encoding='utf-8') as f:
+        return f.read()
+
 @csrf_exempt
 @require_http_methods(["GET", "POST"])
 def chat_endpoint(request):
     # shared resume context
-    resume_context = """
-    Name: Azizjon
-    Experience: I worked in Rex Innovation and G-Man Auto Parts as an AI Engineer.
-    Skills: Quick to adapt to new circumstances and very curious by nature.
-    Education: I graduated high school in Tashkent and then Woosong University in South Korea
-    Projects: Done many projects
+    context = get_context()
+    resume_context = f"""
+    {context}
 
-    Answer questions about this person's background professionally and helpfully.
+    The above is an information about Azizjon Kasimov.
+    Answer questions about this person's background professionally and helpfully. Use plain text
+    when answering to the users.
     """
 
     # extract message depending on method

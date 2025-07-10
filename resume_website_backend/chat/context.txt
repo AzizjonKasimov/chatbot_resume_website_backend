@@ -1,0 +1,88 @@
+Azizjon Kasimov
+
+Robotics enthusiast || AI Engineer || Transform Data into Intelligence
+
+Daejeon, South Korea
+
+Summary
+My approach to work is driven by continuous growth and excellence. I believe in pushing beyond conventional boundaries while maintaining a strong commitment to work-life balance and personal well-being. This philosophy not only keeps me energized and focused but also enhances my ability to deliver exceptional results consistently.
+
+I thrive in collaborative environments and prioritize building strong team relationships. Effective communication and teamwork are at the core of how I approach every project, ensuring that we achieve our goals together while fostering a positive work culture.
+
+Experience
+
+G-Man Auto Parts
+AI Engineer
+March 2025 - Present (5 months)
+Hwaeseong, Gyeonggi, South Korea
+
+Self-Employed
+ML Engineer & Data Scientist
+November 2024 - February 2025 (4 months)
+Daejeon, South Korea
+Providing ML Engineering and Data Science services through Upwork platform
+
+July 2024 - November 2024 (5 months)
+대한민국 전라남도 나주시
+Productionized power generation prediction and anomaly detection systems for solar power plants.
+- Managed technical coordination between ML, backend, and frontend teams for successful VPP platform integration, establishing clear communication channels and proactively addressing integration challenges to ensure smooth system deployment.
+- Optimized solar power generation prediction model performance, through data analysis and hyperparameter optimization, by 22% (reducing error rate from 9% to 7%), meeting the requirement of <8% error rate and enabling revenue accumulation from Korean Power Exchange (KPX) power brokerage business.
+- Architected end-to-end MLOps infrastructure using Docker Compose, GitHub Actions, PostgreSQL, Prometheus, and Grafana, achieving 80% reduction in manual operations and $48K annual operational savings.
+
+AI Engineer
+June 2024 - July 2024 (2 months)
+대한민국 전라남도 나주시
+Deployed time series anomaly detection system and developed power prediction for solar power plants.
+- Containerized anomaly detection system using Docker Compose and implemented CI/CD pipelines with GitHub Actions, ensuring reliable and consistent deployments and reduced deployment time from 2-3 hours of manual work to 15 minutes automated process.
+- Developed solar power generation forecasting system, using Pytorch, achieving <10% average error rate, enabling the company to qualify for KPX power brokerage business.
+
+Data Scientist Intern
+March 2024 - June 2024 (4 months)
+대한민국 전라남도 나주시
+Developed a Time Series Anomaly Detection System for Solar Power Plants.
+- Created RESTful API using FastAPI for the anomaly detection system, enabling seamless integration with the company's Virtual Power Plant (VPP) platform
+- Optimized Graph Neural Network (GNN) model architecture through extensive experimentation, achieving 70% precision and 50% recall in anomaly detection, with all experiments tracked and versioned using MLflow.
+- Developed end-to-end ML pipeline using PyTorch, pandas, and NumPy for sensor data processing, model training, and inference of the GNN-based anomaly detection system
+- Implemented dynamic hourly threshold system (24 thresholds vs. 1 global), improving recall by 10% by accounting for daily error rate fluctuations
+- Designed comprehensive visualization framework for comparing model predictions against actual data across multiple time series features
+- Optimized training pipeline by implementing anomaly filtering, resulting in 30% precision improvement and 20% recall improvement through cleaner training data
+
+PROMOM KINDER
+English Teacher
+June 2023 - February 2024 (9 months)
+Daejeon, South Korea
+- Led interactive English language sessions for children aged 3-7, focusing on play-based learning and cognitive development.
+- Worked with a multicultural team to maintain an engaging, English-immersive environment.
+- Adapted activities and teaching methods to cater to various learning styles and needs.
+
+Woosong University
+Dormitory Assistant
+February 2023 - August 2023 (7 months)
+Daejeon, South Korea
+Assisted in the dormitory's administrative affairs and operations, delivered official announcements to students, handled check-ins and check-outs as well as maintained the dormitory facilities.
+
+Skills
+
+Top Skills
+Django
+Vector Databases
+Graph Databases
+
+Languages
+Russian (Native or Bilingual)
+English (Full Professional)
+Uzbek (Limited Working)
+Korean (Limited Working)
+
+Certifications
+Deep Learning Specialization
+Neo4j & LLM Fundamentals
+Graph Data Modeling Fundamentals
+Machine Learning in Production
+English Proficiency Certificate
+
+Honors-Awards
+Solbridge Debate Competition
+Finalist - Silicon Valley Business Plan Competition Award (ISE Award)
+LINC 3.0 Program (Leaders in Industry-university Cooperation) award
+SW중심대학 (Software-Centered University) Software Application Competition
