@@ -49,19 +49,18 @@ TEMPLATES = [
 
 ROOT_URLCONF = 'resume_website_backend.urls'
 
-if DEBUG:
-    # Use SQLite locally
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+# Use SQLite locally
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    # Production (e.g. Postgres via DATABASE_URL)
-    import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.parse(config('DATABASE_URL'))
+}
+# else:
+#     # Production (e.g. Postgres via DATABASE_URL)
+#     import dj_database_url
+#     DATABASES = {
+#         'default': dj_database_url.parse(config('DATABASE_URL'))
     }
 
 # Static files
