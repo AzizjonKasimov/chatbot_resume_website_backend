@@ -8,7 +8,11 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 GEMINI_API_KEY = config('GEMINI_API_KEY')
 
-ALLOWED_HOSTS = ['*']  # Render will handle this
+ALLOWED_HOSTS = [
+    'resume-website-backend-40i7.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -68,4 +72,17 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = True  # For development
+if DEBUG:
+    # Development - allow localhost and your GitHub Pages
+    CORS_ALLOWED_ORIGINS = [
+        "http://localhost:3000",      # React dev server
+        "http://127.0.0.1:3000",     # Alternative localhost
+        "http://localhost:8000",      # If you're serving frontend on 8000
+        "http://127.0.0.1:8000",     # Alternative
+        "https://azizjonkasimov.github.io",  # Your GitHub Pages
+    ]
+else:
+    # Production - only allow your GitHub Pages
+    CORS_ALLOWED_ORIGINS = [
+        "https://azizjonkasimov.github.io",
+    ]
