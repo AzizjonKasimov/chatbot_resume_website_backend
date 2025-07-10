@@ -1,8 +1,9 @@
 # settings.py
 import os
+from pathlib import Path
 from decouple import config
-import dj_database_url
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 GEMINI_API_KEY = config('GEMINI_API_KEY')
@@ -17,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
-    'chat',  # your app
+    'resume_website_backend.chat',
 ]
 
 MIDDLEWARE = [
@@ -31,12 +32,37 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'myproject.urls'
+# TEMPLATES configuration
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 
-# Database
-DATABASES = {
-    'default': dj_database_url.parse(config('DATABASE_URL'))
-}
+ROOT_URLCONF = 'resume_website_backend.urls'
+
+if DEBUG:
+    # Use SQLite locally
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:
+    # Production (e.g. Postgres via DATABASE_URL)
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.parse(config('DATABASE_URL'))
+    }
 
 # Static files
 STATIC_URL = '/static/'

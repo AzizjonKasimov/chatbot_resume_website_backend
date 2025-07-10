@@ -1,5 +1,5 @@
 Django
-google-generativeai
+google-genai
 python-decouple
 gunicorn
 psycopg2-binary
