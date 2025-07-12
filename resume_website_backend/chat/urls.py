@@ -1,4 +1,4 @@
-# chat/urls.py
+# resume_website_backend/chat/urls.py
 from django.urls import path
 from . import views
 

@@ -1,3 +1,4 @@
+# manage.py
 import os
 import sys
 

@@ -1,4 +1,4 @@
-# settings.py
+# resume_website_backend/settings.py
 import os
 from pathlib import Path
 from decouple import config
@@ -75,11 +75,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 if DEBUG:
     # Development - allow localhost and your GitHub Pages
     CORS_ALLOWED_ORIGINS = [
-        "http://localhost:3000",      # React dev server
-        "http://127.0.0.1:3000",     # Alternative localhost
-        "http://localhost:8000",      # If you're serving frontend on 8000
-        "http://127.0.0.1:8000",     # Alternative
+        "http://localhost:3000",             # React dev server
+        "http://127.0.0.1:3000",             # Alternative localhost
+        "http://localhost:8000",             # If you're serving frontend on 8000
+        "http://127.0.0.1:8000",             # Alternative
         "https://azizjonkasimov.github.io",  # Your GitHub Pages
+        "http://localhost:5173",             # Vite dev server
     ]
 else:
     # Production - only allow your GitHub Pages
