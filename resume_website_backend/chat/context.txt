@@ -1,88 +1,138 @@
-Azizjon Kasimov
+# Azizjon Kasimov - Professional Profile
 
-Robotics enthusiast || AI Engineer || Transform Data into Intelligence
+## Contact Information
+- **Location:** Daejeon, South Korea
+- **Phone:** +82 10 8471 7687
+- **Email:** azizkhasimov@gmail.com
+- **LinkedIn:** linkedin.com/in/azizjon-kasimov
 
-Daejeon, South Korea
+## Professional Experience
 
-Summary
-My approach to work is driven by continuous growth and excellence. I believe in pushing beyond conventional boundaries while maintaining a strong commitment to work-life balance and personal well-being. This philosophy not only keeps me energized and focused but also enhances my ability to deliver exceptional results consistently.
+### G-Man Auto Parts (March 2025 - Present)
+**AI Developer** | Remote Position
+- Developing AI-powered semantic search system for used auto parts e-commerce platform
+- Implementing vector database (Weaviate) for semantic search functionality
+- Fine-tuning embedding models on custom datasets to improve search accuracy
+- Integrating spaCy NLP for named entity recognition and intelligent filtering
+- Building robust API endpoints using Django REST Framework with comprehensive testing
+- Contributing to frontend development using TypeScript and React
+- Demonstrating strong remote work discipline and self-management
 
-I thrive in collaborative environments and prioritize building strong team relationships. Effective communication and teamwork are at the core of how I approach every project, ensuring that we achieve our goals together while fostering a positive work culture.
+### Rex Innovation (March 2024 - November 2024)
+**AI Team Lead** (July 2024 - November 2024)
+- Led cross-functional teams (ML, backend, frontend) for solar power prediction systems
+- Improved predictive model accuracy by 22% (error rate: 9% → 7%)
+- Built end-to-end MLOps infrastructure saving $48K annually through 80% reduction in manual operations
+- Deployed systems integrated with Virtual Power Plant (VPP) platforms
+- Enabled company qualification for Korean Power Exchange (KPX) power brokerage
 
-Experience
+**AI Developer** (June 2024 - July 2024)
+- Deployed containerized anomaly detection systems with GitHub Actions
+- Reduced deployment time from 3 hours to 15 minutes
+- Developed PyTorch-based solar generation forecasting achieving <10% average error
 
-G-Man Auto Parts
-AI Engineer
-March 2025 - Present (5 months)
-Hwaeseong, Gyeonggi, South Korea
+**Data Science Intern** (March 2024 - June 2024)
+- Created RESTful APIs with FastAPI for anomaly detection integration
+- Optimized Graph Neural Network (GNN) models achieving 70% precision and 50% recall
+- Built comprehensive ML pipelines using PyTorch, pandas, NumPy
+- Managed experiments using MLflow
 
-Self-Employed
-ML Engineer & Data Scientist
-November 2024 - February 2025 (4 months)
-Daejeon, South Korea
-Providing ML Engineering and Data Science services through Upwork platform
+## Key Projects
 
-July 2024 - November 2024 (5 months)
-대한민국 전라남도 나주시
-Productionized power generation prediction and anomaly detection systems for solar power plants.
-- Managed technical coordination between ML, backend, and frontend teams for successful VPP platform integration, establishing clear communication channels and proactively addressing integration challenges to ensure smooth system deployment.
-- Optimized solar power generation prediction model performance, through data analysis and hyperparameter optimization, by 22% (reducing error rate from 9% to 7%), meeting the requirement of <8% error rate and enabling revenue accumulation from Korean Power Exchange (KPX) power brokerage business.
-- Architected end-to-end MLOps infrastructure using Docker Compose, GitHub Actions, PostgreSQL, Prometheus, and Grafana, achieving 80% reduction in manual operations and $48K annual operational savings.
+### Multivariate Time-Series Anomaly Detection
+- Extensively refactored open-source graph anomaly detection model
+- Improved precision by 35% and recall by 37% through multiple optimization strategies
+- Implemented dynamic 24-hour threshold system (vs. single global threshold)
+- Developed comprehensive visualization framework for model performance comparison
+- Optimized training pipeline by filtering anomalous data, improving results significantly
 
-AI Engineer
-June 2024 - July 2024 (2 months)
-대한민국 전라남도 나주시
-Deployed time series anomaly detection system and developed power prediction for solar power plants.
-- Containerized anomaly detection system using Docker Compose and implemented CI/CD pipelines with GitHub Actions, ensuring reliable and consistent deployments and reduced deployment time from 2-3 hours of manual work to 15 minutes automated process.
-- Developed solar power generation forecasting system, using Pytorch, achieving <10% average error rate, enabling the company to qualify for KPX power brokerage business.
+### Reinforcement Learning for Solar Power Prediction
+- Designed RL environment for multivariate time series solar power forecasting
+- Engineered reward functions for prediction accuracy optimization
+- Explored continuous action space algorithms (DDPG, PPO, SAC)
+- Applied RL to renewable energy sector with real-world data complexities
 
-Data Scientist Intern
-March 2024 - June 2024 (4 months)
-대한민국 전라남도 나주시
-Developed a Time Series Anomaly Detection System for Solar Power Plants.
-- Created RESTful API using FastAPI for the anomaly detection system, enabling seamless integration with the company's Virtual Power Plant (VPP) platform
-- Optimized Graph Neural Network (GNN) model architecture through extensive experimentation, achieving 70% precision and 50% recall in anomaly detection, with all experiments tracked and versioned using MLflow.
-- Developed end-to-end ML pipeline using PyTorch, pandas, and NumPy for sensor data processing, model training, and inference of the GNN-based anomaly detection system
-- Implemented dynamic hourly threshold system (24 thresholds vs. 1 global), improving recall by 10% by accounting for daily error rate fluctuations
-- Designed comprehensive visualization framework for comparing model predictions against actual data across multiple time series features
-- Optimized training pipeline by implementing anomaly filtering, resulting in 30% precision improvement and 20% recall improvement through cleaner training data
+### Road Sign Detection System (University Project)
+- Built YOLOv7-based detection and classification system
+- Created and labeled custom dataset with data augmentation
+- Achieved 91% real-time accuracy
 
-PROMOM KINDER
-English Teacher
-June 2023 - February 2024 (9 months)
-Daejeon, South Korea
-- Led interactive English language sessions for children aged 3-7, focusing on play-based learning and cognitive development.
-- Worked with a multicultural team to maintain an engaging, English-immersive environment.
-- Adapted activities and teaching methods to cater to various learning styles and needs.
+## Education
 
-Woosong University
-Dormitory Assistant
-February 2023 - August 2023 (7 months)
-Daejeon, South Korea
-Assisted in the dormitory's administrative affairs and operations, delivered official announcements to students, handled check-ins and check-outs as well as maintained the dormitory facilities.
+### Woosong University (2020-2024)
+**Bachelor of Future Technologies**
+- GPA: 4.39/4.5
+- Awarded 4 full scholarships and multiple academic awards
+- **Notable Coursework:**
+  - AI in Medicine (Research paper: "Machine Learning Algorithms Applied to Digital Twins in Healthcare")
+  - Cloud Platforms (AWS: EC2, S3, Elastic Beanstalk)
+  - Natural Language Processing (Transformers, BERT, GPT, BART)
+  - Object-Oriented Programming (Java, Swing, AWT)
 
-Skills
+## Certifications & Online Learning
 
-Top Skills
-Django
-Vector Databases
-Graph Databases
+### DeepLearning.AI Specializations
+- **Math for Machine Learning and Data Science**: Linear algebra, calculus, statistics, optimization
+- **Deep Learning Specialization**: Neural networks, CNNs, RNNs, LSTMs, TensorFlow/Keras
+- **Machine Learning in Production**: MLOps, model deployment, monitoring, A/B testing
 
-Languages
-Russian (Native or Bilingual)
-English (Full Professional)
-Uzbek (Limited Working)
-Korean (Limited Working)
+### Additional Courses
+- **Neo4j Graph Database**: Graph modeling, Cypher queries, knowledge graphs, RAG implementation
+- **Learning How to Learn**: Advanced learning techniques, productivity strategies
+- **Data Science Methodology** (Coursera): Data science fundamentals and best practices
 
-Certifications
-Deep Learning Specialization
-Neo4j & LLM Fundamentals
-Graph Data Modeling Fundamentals
-Machine Learning in Production
-English Proficiency Certificate
+## Technical Skills
 
-Honors-Awards
-Solbridge Debate Competition
-Finalist - Silicon Valley Business Plan Competition Award (ISE Award)
-LINC 3.0 Program (Leaders in Industry-university Cooperation) award
-SW중심대학 (Software-Centered University) Software Application Competition
+### Programming Languages
+- Python (Primary)
+- Java
+- TypeScript
+- SQL (including Cypher for Neo4j)
+
+### AI/Machine Learning
+- **Frameworks**: PyTorch, TensorFlow, Keras, Scikit-learn
+- **Specializations**: Deep Learning, Reinforcement Learning, NLP, Computer Vision
+- **Libraries**: Hugging Face Transformers, spaCy, OpenAI Gym, Stable-Baselines3
+- **Techniques**: Time series analysis, anomaly detection, semantic search, transfer learning
+
+### Data Science & Analytics
+- **Tools**: Pandas, NumPy, Matplotlib, Seaborn
+- **Databases**: PostgreSQL, Neo4j (Graph DB), Weaviate (Vector DB)
+- **Visualization**: Comprehensive model performance dashboards
+
+### MLOps & Production
+- **Deployment**: Docker, Docker Compose, GitHub Actions
+- **Monitoring**: Prometheus, Grafana, MLflow
+- **APIs**: FastAPI, Django REST Framework
+- **Cloud**: AWS basics (EC2, S3, RDS)
+
+### Frontend Development
+- React with TypeScript
+- Modern web application development
+- Integration with AI-powered backends
+
+## Domain Expertise
+- **Renewable Energy**: Solar power forecasting, energy market dynamics
+- **Time Series Analysis**: Multivariate forecasting, anomaly detection
+- **E-commerce**: Semantic search, recommendation systems
+- **Healthcare AI**: Digital twins, medical AI research
+- **Graph Databases**: Knowledge graphs, relationship modeling
+
+## Personal Attributes
+- **Remote Work Excellence**: Self-disciplined, strong time management, effective virtual collaboration
+- **Health-Conscious**: Proactive about physical and mental well-being
+- **Financial Literacy**: Expense tracking, investment planning, long-term financial strategy
+- **Continuous Learning**: Research-oriented, stays current with technology trends
+- **Medical Interest**: Passion for contributing to healthcare technology advancement
+
+## Languages
+- Russian (Native)
+- English (Fluent)
+- Uzbek (Conversational)
+- Korean (Conversational)
+
+## Important Notes
+- No experience in gaming or blockchain technologies
+- Strong focus on practical, measurable business impacts
+- Proven track record of optimizing systems with quantified results
+- Experience across full ML lifecycle from research to production deployment
