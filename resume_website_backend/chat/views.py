@@ -1,4 +1,6 @@
 import logging
+
+from django.core.mail import send_mail
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
@@ -124,6 +126,24 @@ def reset_chat(request):
         'message': 'Chat history reset successfully',
         'status': 'success'
     })
+
+@csrf_exempt
+@require_http_methods(["GET", "POST"])
+def feedback_email(request):
+    data = json.loads(request.body)
+    subject = f"Feedback ({data['feedback']}) Message {data['message_id']}"
+    body    = data['comment']
+    try:
+        send_mail(
+            subject,
+            body,
+            'azizkhasimov@gmail.com',
+            ['azizkhasimov@gmail.com'],
+            fail_silently=False
+        )
+        return JsonResponse({'status': 'sent'})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 def index(request):

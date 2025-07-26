@@ -87,3 +87,12 @@ else:
     CORS_ALLOWED_ORIGINS = [
         "https://azizjonkasimov.github.io",
     ]
+
+EMAIL_BACKEND       = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST          = config('EMAIL_HOST')
+EMAIL_PORT          = int(config('EMAIL_PORT'))
+EMAIL_USE_TLS       = config('EMAIL_USE_TLS', 'True') == 'True'
+EMAIL_USE_SSL       = config('EMAIL_USE_SSL', 'False') == 'True'
+EMAIL_HOST_USER     = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL  = EMAIL_HOST_USER
