@@ -132,7 +132,7 @@ def reset_chat(request):
 def feedback_email(request):
     data = json.loads(request.body)
     subject = f"Feedback ({data['feedback']}) Message {data['message_id']}"
-    body    = data['comment']
+    body    = f"Chat history: {data['history']}. \n\n Comment: {data['comment']}\n\n"
     try:
         send_mail(
             subject,
