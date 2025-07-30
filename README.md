@@ -1,7 +1,6 @@
 # Chatbot Resume Website - Backend
 
-This repository contains the backend API for the [Chatbot Resume Website](https://github.com/AzizjonKasimov/AzizjonKasimov.github.io) 
-project, built with Django and Django REST Framework.
+This repository contains the backend API for the [Chatbot Resume Website](https://opensourcedesign.net/) project, built with Django and Django REST Framework.
 
 ## Features
 
@@ -54,6 +53,17 @@ The email settings are used to send user feedback directly to your inbox. Config
 ## Deployment
 
 This project is configured for deployment on Render with the included `build.sh` script. The setup requires no external database management, making deployment straightforward.
+
+## Customization
+
+### Resume Context Configuration
+
+The chatbot requires your personal information to provide accurate responses about your background:
+
+- **Context File**: Edit `resume_website_backend/chat/context.txt` to include your work experience, skills, education, and other relevant information
+- **Instructions**: Modify `resume_website_backend/chat/instructions.py` to customize how the chatbot responds and behaves
+
+These files serve as the knowledge base for the AI, so make sure to update them with your specific details before deployment.
 
 ## Development
 
