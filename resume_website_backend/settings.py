@@ -6,7 +6,14 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
-GEMINI_API_KEY = config('GEMINI_API_KEY')
+CHAT_PROVIDER = config('CHAT_PROVIDER', default='groq').lower()
+GROQ_API_KEY = config('GROQ_API_KEY', default='')
+GROQ_MODEL = config('GROQ_MODEL', default='llama-3.3-70b-versatile')
+CHAT_MAX_MESSAGE_LENGTH = config('CHAT_MAX_MESSAGE_LENGTH', default=1200, cast=int)
+CHAT_MAX_HISTORY_TURNS = config('CHAT_MAX_HISTORY_TURNS', default=8, cast=int)
+CHAT_CACHE_TTL = config('CHAT_CACHE_TTL', default=3600, cast=int)
+CHAT_RATE_LIMIT_WINDOW = config('CHAT_RATE_LIMIT_WINDOW', default=60, cast=int)
+CHAT_RATE_LIMIT_MAX_REQUESTS = config('CHAT_RATE_LIMIT_MAX_REQUESTS', default=10, cast=int)
 
 ALLOWED_HOSTS = [
     'resume-website-backend-40i7.onrender.com',

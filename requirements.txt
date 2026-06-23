@@ -1,5 +1,5 @@
 Django
-google-genai
+groq
 gunicorn
 psycopg2-binary
 django-cors-headers

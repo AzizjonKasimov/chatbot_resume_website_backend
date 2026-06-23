@@ -4,7 +4,7 @@ This repository contains the backend API for the [Chatbot Resume Website](https:
 
 ## Features
 
-- **Chatbot Integration**: Powered by Google's Gemini API for intelligent resume interactions
+- **Chatbot Integration**: Powered by Groq's `llama-3.3-70b-versatile` model for intelligent resume interactions
 - **User Feedback System**: Collects and emails user feedback directly to administrators
 - **RESTful API**: Clean, well-structured endpoints to support the frontend application
 - **Lightweight Database**: Uses SQLite for simplicity (no external database required)
@@ -12,7 +12,7 @@ This repository contains the backend API for the [Chatbot Resume Website](https:
 ## Tech Stack
 
 - **Framework**: Django with Django REST Framework
-- **AI Integration**: Google Gemini API
+- **AI Integration**: Groq API (`llama-3.3-70b-versatile`)
 - **Database**: SQLite
 - **Hosting**: Render (build.sh included)
 - **Python Version**: 3.13 (earlier versions should work)
@@ -24,8 +24,10 @@ This repository contains the backend API for the [Chatbot Resume Website](https:
 Create a `.env` file in the root directory with the following configuration:
 
 ```env
-# Gemini AI Configuration
-GEMINI_API_KEY=your_gemini_api_key_here
+# Chat AI Configuration
+CHAT_PROVIDER=groq
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=llama-3.3-70b-versatile
 
 # Django Configuration
 SECRET_KEY=your_django_secret_key_here
@@ -41,7 +43,7 @@ EMAIL_USE_SSL=False
 
 ### Getting API Keys
 
-- **Gemini API**: Visit [Google AI Studio](https://makersuite.google.com/) to get your free API key. The Gemini API offers a generous free tier perfect for development and testing.
+- **Groq API**: Create a server-side API key in the [Groq Console](https://console.groq.com/keys). This project uses `llama-3.3-70b-versatile` only, with a static fallback when the free-tier quota is reached or the provider is temporarily unavailable.
 - **Django Secret Key**: Generate one using Django's built-in utility or online generators
 
 ### Email Configuration Notes
@@ -52,7 +54,7 @@ The email settings are used to send user feedback directly to your inbox. Config
 
 ## Deployment
 
-This project is configured for deployment on Render with the included `build.sh` script. The setup requires no external database management, making deployment straightforward.
+This project is configured for deployment on Render with the included `build.sh` script. Set `CHAT_PROVIDER=groq`, `GROQ_MODEL=llama-3.3-70b-versatile`, and `GROQ_API_KEY` in Render's environment settings. The setup requires no external database management, making deployment straightforward.
 
 ## Customization
 
@@ -67,4 +69,4 @@ These files serve as the knowledge base for the AI, so make sure to update them 
 
 ## Development
 
-The backend provides API endpoints that seamlessly integrate with the frontend to deliver an interactive resume experience powered by AI.
+The backend provides API endpoints that seamlessly integrate with the frontend to deliver an interactive resume experience powered by AI. If the Groq free-tier limit is reached, the chat endpoint returns a helpful fallback response instead of failing the site.
